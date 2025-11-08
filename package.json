@@ -1,0 +1,20 @@
+{
+  "name": "kspa-car-broker",
+  "version": "1.0.0",
+  "description": "Car sales broker platform connecting local showrooms with customers",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["car", "marketplace", "broker", "showroom", "automotive"],
+  "author": "Kspa Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
